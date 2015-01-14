@@ -8,7 +8,6 @@ import org.junit.Test;
 
 public class ClasseTest {
 
-
 	Classe c;
 
 	/**
@@ -28,16 +27,14 @@ public class ClasseTest {
 		c.addEleve(e);
 		assertEquals(c.getNbEleves(), tailleOld + 1);
 	}
+	/**
+	 * Test name attribut
+	 */
 	@Test
 	public void testClasseName() {
 		assertEquals("Fail dans le nom de la classe", c.getNom(), "M2 MIAGE IF");
 	}
 
-	/**
-	 * Sets up the test fixture.
-	 *
-	 * Called before every test case method.
-	 */
 	@Before
 	public void setUp()
 	{

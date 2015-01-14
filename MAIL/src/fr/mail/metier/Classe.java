@@ -43,6 +43,8 @@ public class Classe {
 	 * @param nom the nom to set
 	 */
 	public void setNom(String nom) {
+		if (nom==null||nom.isEmpty())
+			throw new IllegalArgumentException ();
 		this.nom = nom;
 	}
 
@@ -57,6 +59,8 @@ public class Classe {
 	 * @param annee the annee to set
 	 */
 	public void setAnnee(int annee) {
+		if (annee==0)
+			throw new IllegalArgumentException ();
 		this.annee = annee;
 	}
 
@@ -85,6 +89,8 @@ public class Classe {
 	 * @param numero the numero to set
 	 */
 	public void setNumero(int numero) {
+		if (this.numero!=0)
+			new IllegalAccessException();
 		this.numero = numero;
 	}
 
