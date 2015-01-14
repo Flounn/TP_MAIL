@@ -79,5 +79,36 @@ public class Classe {
 	private String specialite;
 	private int numeroClasse;
 	private int totalEleve;
+	
+	
+	
+	
+	  //Constructeur par défaut
+	  public Classe(){
+	    System.out.println("Création d'une classe !");          
+	    nomClasse = 0;
+	    profPrincipale = "Inconnu";
+	    anneeScolaire = 0;
+	    specialite = "Inconnu";
+	    numeroClasse = 0;
+	    totalEleve = 0;
+	  }
+	 
+	  //Constructeur avec paramètres
+	  //J'ai ajouté un « p » en première lettre des paramètres.
+	  //Ce n'est pas une convention, mais ça peut être un bon moyen de les repérer.
+	  public Classe(int pNomClasse, String pProfPrincipale, int pAnneeScolaire, String pSpecialite, int pTotalEleve)
+	  {
+	    System.out.println("Création d'une classe avec des paramètres !");
+	    nomClasse = pNomClasse;
+	    profPrincipale = pProfPrincipale;
+	    anneeScolaire = pAnneeScolaire;
+	    specialite = pSpecialite;
+	    numeroClasse =  Integer.valueOf(pAnneeScolaire + pNomClasse);
+	    totalEleve = pTotalEleve;
+	  }    
+	
+	
+	
 }
 
