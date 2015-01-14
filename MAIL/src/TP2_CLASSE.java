@@ -6,6 +6,11 @@ public class TP2_CLASSE {
 
 	public static void main(String[] args) {
 		
+		
+		//Branche Recette!!!!!
+		System.out.println("//Branche Recette!!!!!");
+		
+		
 		Classe c1 = new Classe("M2 MIAGE IF", 2015, "Finance", 27); 
 		Classe c2 = new Classe();  
 
